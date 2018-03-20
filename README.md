@@ -3,7 +3,7 @@ En este documento aprenderemos a administrar dominios y los accesos al dominio e
 
 Para ello deberemos realizar los siguientes apartados:   
 |Prueba|Explicacion|   
-|------|-----------|   
+| ------ | ----------- |   
 |A|Pruebas|   
 
 [A) Se han implementado dominios.](https://github.com/raframmed/administracion_de_dominios/blob/master/apartados/A.md)
