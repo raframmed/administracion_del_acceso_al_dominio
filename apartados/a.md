@@ -21,4 +21,14 @@ Estos campos se habilitan dandole a *Usar la siguiente dirección IP*. Deberemos
 Para comprobar que el cliente ha sido conectado al servidor deberemos con el servidor y el/los cliente/s iniciados desde los distintos cliente abrir una consola de comandos y usar el comando **ping** hacia la dirección del servidor, si obtenemos respuestas correctas quiere decir que el cliente y el servidor están bien conectados. Debe de aparecer algo parecido a la siguiente imagen:
 
 ![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/a/ping_cliente_servidor.png "ping")  
+## Unir cliente al dominio.
 
+Para unir un cliente al servidor deberemos modificar el nombre del cliente, para ello iremos a *Inicio* -> botón derecho en *Equipo* -> *Cambiar configuración* -> *Nombre del Equipo* -> *Cambiar...*, una vez aquí tendremos que establecer un nombre  equipo y habilitaremos la seccioón dominios en la cual escribiremos el nombre de nuestro dominio. Seguidamente para aceptar esto debermos dar permisos de administrador. Esta parte se mostrará como en la siguiente imagen adjuntada:
+
+![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/a/añadiendo_dominio_al_cliente(reiniciar).png "cambio de nombre del equipo")  
+
+Tras esto deberemos guardar los cambios y reiniciar la máquina.
+
+### Comprobación de la unión en el servidor
+
+Una vez en el servidor nos vamos a la herramienta de *Usuarios y equipos de Active Directory*, se nos habrá creado una capeta en el panel lateral llamada **Computers** donde encontraremos las máquinas unidas al servidor
