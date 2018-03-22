@@ -1,44 +1,19 @@
-# A)	Se han implementado dominios
-Un Dominio es una colección de objetos dentro del directorio que forman un subconjunto administrativo. 
-Pueden existir diferentes dominios dentro de un bosque, cada uno de ellos con su propia colección de objetos y 
-unidades organizativas.
+# Se han incorporado equipos al dominio.
 
-Para poner nombre a los dominios se utiliza el protocolo DNS. Más adelante configuraremos servidores DNS para poder usar 
-el Active Directory.
+Para simular el uso de un servidor deberemos crear clientes y unirlos al equipo y así poder hacer uso de elementos creados en el servidor como son los perfiles móviles. Para ello deberemos crear dos máquinas virtuales para simular los clientes, en mi caso he usado máquinas de Windows 7.
 
-## Asignación de dirección IP, máscara de red y servidor DNS al servidor
-Antes de crear un domino deberemos asignar una dirección IP al adaptador de red junt con su máscara de red y también 
-un servidor DNS para que el servidor pueda tener acceso a internet. Para ello haremos uso del *sconfig.md*. Al ejecutarlo
-nos encontraremos lo siguiente:
+## Conxión de clientes al servidor.
 
-![alt text](https://github.com/raframmed/administracion_de_dominios/blob/master/assets/images/a/sconfig_cmd.png "sconfig.cmd")
+Antes de conectar los clientes al servidor deberemos configurar el adaptador de red de las máquinas en modo puente, tanto del servidor como el de los clientes, para ello nos irémos a *Configuración de la máquina virtual* -> *Red* -> *Adaptador de red* lo cambiamos de **NAT** a **adaptador puente** de tal forma que nos quede como en la siguiente imagen:
 
-Seleccionamos la opción 8 del menú que se nos muestra, la cual nos llevará al siguiente submenú:
+![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/a/red_cliente.png "adaptador de red")  
 
-![alt text](https://github.com/raframmed/administracion_de_dominios/blob/master/assets/images/a/adaptador_sconfig.png "adaptador_sconfig.cmd")
+Una vez hecho esto iniciaremos el cliente y haremos los siguientes pasos:
 
-Como podemos observar en la siguiente imagen, ya tengo configurada una dirección IP con su máscara y un servidor DNS. Para ello deberemos usar las opciones 1 y 2 de este submenú. La opción 1 nos permite asignar una dirección IP y una máscara de red, y en la opción asignaremos una dirección de DNS.
+1. Dentro del cliente iremos a la configuración del equipo *Inicio* -> *Panel de Control* -> *Redes e Internet* -> *Centro de redes y recursos compartidos* -> *Cambiar configuración del adaptador* ya en este directorio haremos click derecho en el adaptador que esté actuando como puente, en mi caso el *adaptador de área local* y le daremos a *propiedades* -> *Protocolo de Internet versión 4 (TCP/IPv4)* y una vez esté selecionado le damos a **propiedades** de nuevo y rellenaremos los campos que vemos en la siguiente imagen:
 
-## Instalación del rol de Servicios de dominio de Active Directory
-Para comenzar deberemos ejecutar powershell, una vez dentro ejecutaremos   
-```Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools```   
-para instalar la característica AD-Domain-Services y todas las herramientas de gestion que incluyen ManagementTools.
-   
-![alt text](https://github.com/raframmed/administracion_de_dominios/blob/master/assets/images/a/Install-Ad-domain-services.png "dominios")
 
-## Promoción del servidor como controlador de dominio
-Para realiar la promoción necesitamos instalar el módulo ADDSDeployement a la sesión de trabajo para poder implementar servicios de dominio de Active directory. Para instalarlo usaremos el comando:   
-```Import-Module ADDSDeployment```
+![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/a/configuracion_ip.png "ip")  
 
-Una vez instalado tendremos 3 comandos principales entre los cuales se encuentra ```Install-ADDSForest``` que es el que usaremos. Una vez lo escribamos se nos pedirá un nombre para el dominio y una contraseña de administración. Administrados los datos que nos piden se instalará el nuevo Forest (bosque) y se reiniciará el sistema una vez finalizado.
+Estos campos se habilitan dandole a *Usar la siguiente dirección IP*. Deberemos facilar dirección ip fija que le vamos a dar a la máquina, la máscara de subred que utilizará la red, puerta de enlace que será la IP del servidor al igual que el servidor DNS preferido en la cual también escribiremos la IP del servidor.
 
-![alt text](https://github.com/raframmed/administracion_de_dominios/blob/master/assets/images/a/ADDSForest.png "forest")
-
-## Comprobación de la promoción
-Para realizar la comprobación ejecutaremos ```sconfig.cmd``` el cual nos mostrara que el dominio ha sido creado.
-
-![alt text](https://github.com/raframmed/administracion_de_dominios/blob/master/assets/images/a/comprobacion_dominio.png "comprobacion promocion")
-
-Hecho esto habremos creado el dominio en modo comando sin interfaz gráfica.
-
-[Volver al índice](https://github.com/raframmed/administracion_de_dominios)
