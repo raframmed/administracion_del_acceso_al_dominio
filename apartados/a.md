@@ -12,8 +12,13 @@ Una vez hecho esto iniciaremos el cliente y haremos los siguientes pasos:
 
 1. Dentro del cliente iremos a la configuración del equipo *Inicio* -> *Panel de Control* -> *Redes e Internet* -> *Centro de redes y recursos compartidos* -> *Cambiar configuración del adaptador* ya en este directorio haremos click derecho en el adaptador que esté actuando como puente, en mi caso el *adaptador de área local* y le daremos a *propiedades* -> *Protocolo de Internet versión 4 (TCP/IPv4)* y una vez esté selecionado le damos a **propiedades** de nuevo y rellenaremos los campos que vemos en la siguiente imagen:
 
-
 ![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/a/configuracion_ip.png "ip")  
 
 Estos campos se habilitan dandole a *Usar la siguiente dirección IP*. Deberemos facilar dirección ip fija que le vamos a dar a la máquina, la máscara de subred que utilizará la red, puerta de enlace que será la IP del servidor al igual que el servidor DNS preferido en la cual también escribiremos la IP del servidor.
+
+## Comprobación de la Conexión.
+
+Para comprobar que el cliente ha sido conectado al servidor deberemos con el servidor y el/los cliente/s iniciados desde los distintos cliente abrir una consola de comandos y usar el comando **ping** hacia la dirección del servidor, si obtenemos respuestas correctas quiere decir que el cliente y el servidor están bien conectados. Debe de aparecer algo parecido a la siguiente imagen:
+
+![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/a/ping_cliente_servidor.png "ping")  
 
