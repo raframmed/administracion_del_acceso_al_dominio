@@ -18,10 +18,10 @@ Tras esto *Aceptaremos* las opciones definidas y nos iremos a la herramienta *Us
 
 Si se deseea el se puede configurar el acceso al servidor del usuario hasta una fecha concreta, es decir, la cuenta de usuario expira del servidor al llegar ese día. Esto es útil por ejemplos para empresas con trabajadores con contratos temporales para así no tener que preocuparse de dar de baja al usuario. Se configura en la misma ventana de propiedades donde nos aparecía el botón **Horas de inicio de sesión...** justo en la parte de abajo antes de aceptar la configuración. Aquí un ejemplo:
 
-![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/b/4_caducacion.png "Paso 4)
+![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/b/4_caducacion.png "Paso 4")
 
 Una vez creado el bloqueo encenderemos nuestra máquina cliente e intentaremos acceder al servidor con nuestro usuario y contraseña, si te encuntras en el horario establecido podrás usar tu cuenta con normalidad como hasta ahora en cambio si te encuentras en un horario que difiere del establecido en el servidor se nos mostrará lo siguiente al intentar acceder:
 
-![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/b/5_sin_acceso.png "Paso 5)
+![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/b/5_sin_acceso.png "Paso 5")
 
 [Volver al índice](https://github.com/raframmed/administracion_de_dominios)
