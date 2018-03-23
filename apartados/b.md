@@ -24,4 +24,12 @@ Una vez creado el bloqueo encenderemos nuestra máquina cliente e intentaremos a
 
 ![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/b/5_sin_acceso.png "Paso 5")
 
+Con esto habremos creado el tipo de bloqueo de usuarios mediante horarios.
+
+## Otros tipos de seguridad
+
+Otros tipos de seguridad son por ejemplo la cantidad de veces que te deja esribir una contraseña antes de que se bloquee el usuario, también si el administrador desea que ese bloqueo sea temporal o no, los caracteres necesarios para que la contraseña establecida al usuario sea válida (un minimo de caracteres o la necesidad de que la contraseña contenga caracteres extraños), etc.
+
 [Volver al índice](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/README.md)
+
+
