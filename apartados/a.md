@@ -27,8 +27,17 @@ Para unir un cliente al servidor deberemos modificar el nombre del cliente, para
 
 ![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/a/añadiendo_dominio_al_cliente(reiniciar).png "cambio de nombre del equipo")  
 
-Tras esto deberemos guardar los cambios y reiniciar la máquina.
+Tras esto deberemos guardar los cambios y reiniciar la máquina. Al iniciarla podremos ir a la configuración de la máquina *Inicio* -> botón derecho en *Equipo* y veremos que el nombre de la máquina y el servidor al que pertenece ha cambiado al igual que en el siguiente ejemplo:
+
+![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/a/comprobación_inicio_sesion.png "comprobacion nombre equipo")
 
 ### Comprobación de la unión en el servidor
 
-Una vez en el servidor nos vamos a la herramienta de *Usuarios y equipos de Active Directory*, se nos habrá creado una capeta en el panel lateral llamada **Computers** donde encontraremos las máquinas unidas al servidor
+Una vez en el servidor nos vamos a la herramienta de *Usuarios y equipos de Active Directory*, se nos habrá creado una capeta en el panel lateral llamada **Computers** donde encontraremos las máquinas unidas al servidor. En tu servidor deberá aparecer algo como lo siguiente:
+
+![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/a/clientes_añadidos.png "comprobacion de unio con el servidor")
+
+Con esto habremos incorporado equipos en el servidor satisfactoriamente.
+
+[Volver al índice](https://github.com/raframmed/administracion_de_dominios)
+
