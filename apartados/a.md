@@ -2,7 +2,7 @@
 
 Para simular el uso de un servidor deberemos crear clientes y unirlos al equipo y así poder hacer uso de elementos creados en el servidor como son los perfiles móviles. Para ello deberemos crear dos máquinas virtuales para simular los clientes, en mi caso he usado máquinas de Windows 7.
 
-## Conxión de clientes al servidor.
+## Conexión de clientes al servidor.
 
 Antes de conectar los clientes al servidor deberemos configurar el adaptador de red de las máquinas en modo puente, tanto del servidor como el de los clientes, para ello nos irémos a *Configuración de la máquina virtual* -> *Red* -> *Adaptador de red* lo cambiamos de **NAT** a **adaptador puente** de tal forma que nos quede como en la siguiente imagen:
 
