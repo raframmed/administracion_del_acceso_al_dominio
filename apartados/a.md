@@ -39,5 +39,5 @@ Una vez en el servidor nos vamos a la herramienta de *Usuarios y equipos de Acti
 
 Con esto habremos incorporado equipos en el servidor satisfactoriamente.
 
-[Volver al índice](https://github.com/raframmed/administracion_de_dominios)
+[Volver al índice](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/README.md)
 

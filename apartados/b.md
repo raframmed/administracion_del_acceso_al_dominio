@@ -24,4 +24,4 @@ Una vez creado el bloqueo encenderemos nuestra máquina cliente e intentaremos a
 
 ![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/b/5_sin_acceso.png "Paso 5")
 
-[Volver al índice](https://github.com/raframmed/administracion_de_dominios)
+[Volver al índice](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/README.md)
