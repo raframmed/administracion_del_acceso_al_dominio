@@ -65,10 +65,29 @@ En este paso no se configura nada, solo obtendremos un breve resumen del recurso
 
 ![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/c/05_crear.png "Paso 5")
 
+## Editar un recurso compartido
 
+Para editar un recurso compartido desde la herramienta de recursos compartidos haremos click derecho *Propiedades* -> *Permisos* -> *Personalizar permisos...* y hermos las modificaciones pertinentes siguiendo los pasos del subapartado de permisos de la creación de recursos compartidos.
 
+## Eliminar un recurso Compartido
 
+Para eliminar un recurso deberemos entrar en la herramienta de recursos compartidos del administrador del servidor, haremos click derecho sobre el recurso que deseamos eliminar de la lista de recursos y le damos a **Detener el uso compartido**, se nos abrirá un cuadro de diálogo para confirmar que vamos a eliminarlo y aceptamos. Tras esto habremos eliminado el recurso.
 
+## Comprobación del recurso compartido
+
+Para comprobar que el recurso compartido ha sido creado satisfactoriamente he añadido al recurso otro usuario con los permisos de *lectura y ejecución, mostrar el contenido de la carpeta y lectura*. Ahora comprobaremos que no podemos eliminar ni crear ningun archivo en el recurso compartido con ese usuario. Para ello deberemos conectarnos al usuario desde un equipo cliente e ir a la carpeta del recurso que tiene compartido.
+
+**Nota: Si la carpeta no se encuentra compartida tendrá que configurarla antes de realizar la comprobación.**
+
+Para realizar la comprobación deberemos crear desde el servidor algun directorio o fichero con el que hacer la comprobación. Una vez creado nos dirigimos a la unidad de red compartida con el usario cliente y desde ahí intentamos eliminarlo. Para una visualización más clara he realizado las capturas del ejemplo que estoy poniendo.
+
+Contenido antes de darle  a eliminar la carpeta (en este caso):
+
+![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/c/06_compr_clie.png "Paso 6")
+
+Mensaje de advertencia al no tener permiso de modificiación sobre el recurso compartido:
+
+![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/c/07_compr_clie.png "Paso 7")
 
 
 [Volver al índice](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/README.md)
