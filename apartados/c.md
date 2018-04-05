@@ -2,14 +2,14 @@
 
 En este apartados explicaremos como administrar recursos locales, es decir, se encuentran en la máquina local que usas y recursos en red o remotos, los cuales pueden estar en otra máquina y a través de la nuestra accedermos a dichos recursos. Para que cualquier persona no pueda acceder a estos recursos utilizaremos permisos de acceso mediante usuarios en un lista blanca.
 
-## Creación de un recurso
+## Creación de un recurso.
 
 Para crear un recurso compartido deberemos iniciar la aplicación de **Administrador del Servidor**, en ella encontraremos un menu lateral donde podemos encontrar la etiqueta **Recursos compartidos**. Una vez nos encontremos en esta sección un poco más arriba nos aparecerá un menú desplegable con la etiqueta **TAREAS** hacemos click sobre ella y le damos a **Nuevo recurso compartido...**.
 Se nos desplegará una ventana con un asistente de configuración el cual nos guiará por los distintos pasos que debemos ir haciendo para crear el recurso como vemos en la siguiente imagen:
 
 ![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/c/01_tipos.png "Paso 1")
 
-### Seleccionar perfil
+### Seleccionar perfil.
 
 En el primer paso se nos pide que seleccionemos el tipo de perfil que vamos a utilizar, dándonos a elegir entre:   
 
@@ -23,13 +23,13 @@ En el primer paso se nos pide que seleccionemos el tipo de perfil que vamos a ut
 
 En nuestro caso elegiremos la primera opción, **Recurso Compartido SMV-Rápido**.
 
-### Ubicación del recurso compartido
+### Ubicación del recurso compartido.
 
 En el segundo paso tendremos dos partes, en la primera elegiremos en que servidor vamos a ubicar el recurso, en nuestro caso solo poseemos un servidor. En la segunda la unidad podremos elegir si ubicar el recurso directamente una unidad o pasarle nosotros una ruta, en nuestro caso escribiremos la ruta de un perfil móvil creado con anterioridad, para ello haremos click en *Escriba una ruta de acceso personalizada* -> *Examinar...* y buscaremos ahí la ruta del directorio que vamos a asignar. En mi caso este paso se quedará de la siguiente forma antes de hacer click en siguiente:
 
 ![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/c/02_ruta.png "Paso 2")
 
-### Nombre del recurso compartido
+### Nombre del recurso compartido.
 
 En este tercer paso deberemos facilitar la información del recurso compartido, para ello se nos pide:
 - Nombrar al recurso compartido.
@@ -38,7 +38,7 @@ En este tercer paso deberemos facilitar la información del recurso compartido, 
 - Ruta remota a recurso compartido, ya viene prefijada cuando accedemos a este paso y ser forma con **`\\Nombre_servidor\Nombre_recurso`**.
 Tras esto damos click en siguiente.
 
-### Otra configuración
+### Otra configuración.
 
 En este apartado nos encontraremos con tres casillas de verificación, las cuales son:
 - Habilitar enumeración basada en acceso: Para que solo los usuarios que tengan permiso de lectura o más puedan ver el contenido del recurso compartido.
@@ -47,7 +47,7 @@ En este apartado nos encontraremos con tres casillas de verificación, las cuale
 
 Habilitamos las tres y en hacemos click en siguiente siguiente.
 
-### Permisos
+### Permisos.
 
 En este paso se nos mostrarán los permisos que ya están predefinidos cuando seleccionamos este tipo de recurso. Nosotros haremos click en el botón **Personalizar permisos...** y una vez aquí le daremos a **Agregar**. Se nos debe de abrir otra ventana en la cual está todo deshabilitado, para habilitarlo deberemos **Seleccionar una entidad de seguridad** (lo podemos encontrar en la parte de arriba). Seguidamente se nos abrirá otra ventana, igual a la de algunos apartados anteriores, donde en el cuadro de texto deberemos introducir el nombre de usuario/s que van a poder acceder al recurso y tras esto damos a comprobar. Debe de salir algo así:
 
@@ -59,21 +59,21 @@ Tras esto haremos cick en **Aceptar** y podremos moficicar los permisos. En nues
 
 Aceptamos la configuración de los permisos y volvemos a aceptar en la ventana llamada **Configuración de seguridad avanzada para @nombre_recurso** y hacemos click en siguiente en la ventana del asistente.
 
-### Confirmación
+### Confirmación.
 
 En este paso no se configura nada, solo obtendremos un breve resumen del recurso que hemos estado configurando. Si estamos de acuerdo con esto procederemos a darle a **Crear**. En mi caso el resumen de dicho recurso ha quedado de la siguiente forma:
 
 ![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/c/05_crear.png "Paso 5")
 
-## Editar un recurso compartido
+## Editar un recurso compartido.
 
 Para editar un recurso compartido desde la herramienta de recursos compartidos haremos click derecho *Propiedades* -> *Permisos* -> *Personalizar permisos...* y hermos las modificaciones pertinentes siguiendo los pasos del subapartado de permisos de la creación de recursos compartidos.
 
-## Eliminar un recurso Compartido
+## Eliminar un recurso Compartido.
 
 Para eliminar un recurso deberemos entrar en la herramienta de recursos compartidos del administrador del servidor, haremos click derecho sobre el recurso que deseamos eliminar de la lista de recursos y le damos a **Detener el uso compartido**, se nos abrirá un cuadro de diálogo para confirmar que vamos a eliminarlo y aceptamos. Tras esto habremos eliminado el recurso.
 
-## Comprobación del recurso compartido
+## Comprobación del recurso compartido.
 
 Para comprobar que el recurso compartido ha sido creado satisfactoriamente he añadido al recurso otro usuario con los permisos de *lectura y ejecución, mostrar el contenido de la carpeta y lectura*. Ahora comprobaremos que no podemos eliminar ni crear ningun archivo en el recurso compartido con ese usuario. Para ello deberemos conectarnos al usuario desde un equipo cliente e ir a la carpeta del recurso que tiene compartido.
 
