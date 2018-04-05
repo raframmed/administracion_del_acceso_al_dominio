@@ -31,7 +31,7 @@ Tras esto deberemos guardar los cambios y reiniciar la máquina. Al iniciarla po
 
 ![alt text](https://github.com/raframmed/administracion_del_acceso_al_dominio/blob/master/assets/images/a/comprobación_inicio_sesion.png "comprobacion nombre equipo")
 
-### Comprobación de la unión en el servidor
+### Comprobación de la unión en el servidor.
 
 Una vez en el servidor nos vamos a la herramienta de *Usuarios y equipos de Active Directory*, se nos habrá creado una capeta en el panel lateral llamada **Computers** donde encontraremos las máquinas unidas al servidor. En tu servidor deberá aparecer algo como lo siguiente:
 
