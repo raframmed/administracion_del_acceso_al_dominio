@@ -1,3 +1,5 @@
+# Se han documentado las tareas y las incidencias.
+
 En esta documentación sobre la administración de equipos y servidor para acceder a un dominio creado con anterioridad hemos podido ver como:
 
 - Se incorporan equipos al dominio.
